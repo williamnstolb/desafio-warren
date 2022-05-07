@@ -30,4 +30,4 @@ const listNum = (n) => {
   return list;
 }
 
-console.log(listNum(1000000));
+export default listNum;
