@@ -45,7 +45,7 @@ Desafio proposto pela WARREN, onde:
 # 🛠️ Abrir e rodar o projeto
 
 1. Clone o repositório
-  * `git clone git@github.com:williamnstolb/desafioWarren.git`
+  * `git clone git@github.com:williamnstolb/desafio-warren.git`
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd app`
 
