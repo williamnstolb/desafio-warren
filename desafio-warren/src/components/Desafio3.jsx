@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import listOfCombination from '../utils/desafio3';
+import IsLoading from './IsLoading';
+import Button from 'react-bootstrap/esm/Button';
 
 function Desafio3() {
   const [list, setList] = useState([2,3,4]);
@@ -34,25 +36,29 @@ function Desafio3() {
   return (
     <div>
       <h1>Desafio 3</h1>
-      <h4> Dado um vetor de números e um número n. Determine a soma com o menor número de elementos entre os números do vetor mais próxima de n e também mostre os elementos que compõem a soma. Para criar a soma, utilize qualquer elemento do vetor uma ou mais vezes.</h4>
+      <h6> Dado um vetor de números e um número n. Determine a soma com o menor número de elementos entre os números do vetor mais próxima de n e também mostre os elementos que compõem a soma. Para criar a soma, utilize qualquer elemento do vetor uma ou mais vezes.</h6>
       <div>
         <label>Qual valor deseja adicionar na lista?:
           {' '}
           <input id="valueAdd" type="number" placeholder="Digite aqui" />
-          <button type="button" onClick={ handleChangeList }>Adicionar</button>
-          <button type="button" onClick={ cleanList }>Limpa lista</button>
+          <br />
+          <br />
+          <Button className="btn btn-success" type="button" onClick={ handleChangeList }>Adicionar</Button>
+          { ' ' }
+          <Button className="btn btn-danger" type="button" onClick={ cleanList }>Limpa lista</Button>
         </label>
         <br />
-        <div >{isLoading ? <h1>Carregando...</h1> : `Lista de números: [${list}]` }</div>
+        <br />
+        <div >{isLoading ? <IsLoading /> : `Lista de números: [${list}]` }</div>
         <br />
         <label >Número:
           {' '}
           <input type="tel" onChange={ handleChangeNumber } value={ number } />
         </label>        
-        <ul>Resultado:</ul>
-        { isLoading ? <h1>Carregando...</h1> :
+        <ul className="list-group">Resultado:</ul>
+        { isLoading ? <IsLoading /> :
           listOfCombination(list, number).map((item) => (
-            <li key={item}>[{item}]</li>
+            <li className="list-group-item" key={item}>[{item}]</li>
           ))
         }
       </div>

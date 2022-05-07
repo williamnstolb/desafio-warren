@@ -1,17 +1,12 @@
-import './App.css';
-import Desafio1 from './pages/Desafio1';
-import Desafio2 from './pages/Desafio2';
-import Desafio3 from './pages/Desafio3';
+import './style/App.css';
+import MainPage from './pages/MainPage';
+
+
 
 function App() {
   return (
     <div className="App">
-      <div >
-      <Desafio1 />
-      <Desafio2 />
-      <Desafio3 />
-      </div>
-      
+      <MainPage />    
     </div>
   );
 }
