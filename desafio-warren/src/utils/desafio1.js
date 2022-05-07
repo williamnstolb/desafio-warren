@@ -26,7 +26,6 @@ const listNum = (n) => {
       list.push(i);
     }
   }
-  console.log(list.length);
   return list;
 }
 
