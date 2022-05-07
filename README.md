@@ -1,70 +1,42 @@
 # :package: Desafio Warren
 
-<!-- <p align="center">
+<p align="center">
    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
 ### Tópicos
 
-- [Imagens do projeto](#camera-imagens-do-projeto)
-
 - [Descrição do projeto](#man_dancing-descrição-do-projeto)
-
-- [Melhorias possíveis](#construction-melhorias-possíveis)
 
 - [Stacks utilizadas](#books-stacks-utilizadas)
 
-- [Etapa mais desafiadora](#goberserk-etapa-mais-desafiadora)
-
 - [Abrir e rodar o projeto](#%EF%B8%8F-abrir-e-rodar-o-projeto)
-
-- [Feedback sobre o desafio](#recycle-feedback-sobre-o-desafio)
-
-
-# :camera: Imagens do projeto
-
-<spam>
-  <img src="https://github.com/williamnstolb/desafioGRX/blob/master/app/Images/TelaPrincipal.png" alt="Tela primária" width="400"/>
-  <img src="https://github.com/williamnstolb/desafioGRX/blob/master/app/Images/TelaResultados.png" alt="Tela resultado" width="400"/>
-</spam>
 
 # :man_dancing: Descrição do Projeto
 
-Desafio proposto pela GRX, onde:
+Desafio proposto pela WARREN, onde:
 
-- Front-end:
-  * Foi solicitado a criação de um formulário com 4 campos (3 perguntas e uma área de texto para justificativa).
+- O Objetivo era realizar três desafio, sendo eles:
+  * Desafio 01
+      Alguns números inteiros positivos n possuem uma propriedade na qual a soma de n + reverso(n) resultam em números ímpares. Por exemplo, 36 + 63 = 99 e 409 + 904 = 1313. Considere que n ou reverso(n) não podem começar com 0.
 
-- Back-end:
-  * Criação de uma API, usando uma arquitetura MSC em NodeJs, para o armazenamento e retorno dos dados calculados de cada formulário enviado pelo front-end.
+      Existem 120 números reversíveis abaixo de 1000.
 
-# :construction: Melhorias possíveis:
+      Construa um algoritmo que mostre na tela todos os números n onde a soma de n + reverso(n) resultem em números ímpares que estão abaixo de 1 milhão.
+  * Desafio 02
+      Um professor de programação, frustrado com a falta de disciplina de seus alunos, decidi cancelar a aula se menos de x alunos estiverem presentes quando a aula for iniciada. O tempo de chegada varia entre:
 
-- Testes para o front-end 
-- Finalizar os testes do back-end 
-- Melhorar a responsividade 
-- Subir a aplicação para o HEROKU 
-- Usar typescript no backend
-- Trocar de arquivo para algum banco de dados
+      Normal: tempoChegada <= 0
+      Atraso: tempoChegada > 0
+      Construa um algoritmo que dado o tempo de chegada de cada aluno e o limite x de alunos presentes, determina se a classe vai ser cancelada ou não ("Aula cancelada” ou “Aula normal”).
+  * Desafio 03
+      Dado um vetor de números e um número n. Determine a soma com o menor número de elementos entre os números do vetor mais próxima de n e também mostre os elementos que compõem a soma. Para criar a soma, utilize qualquer elemento do vetor uma ou mais vezes.
+
 
 # :books: Stacks utilizadas
 
-### Front-end
 - [ReactJs](https://pt-br.reactjs.org/) 
 - [Bootstrap](https://getbootstrap.com/) 
-- [Axios](https://axios-http.com/ptbr/docs/intro)
-
-### Back-end
-- [NodeJs](https://nodejs.org/en/) 
-- [Nodemon](https://www.npmjs.com/package/nodemon) 
-- [Cors](https://www.npmjs.com/package/cors)
-- [Express](https://expressjs.com/pt-br/) 
-- [Mocha](https://mochajs.org/)
-
-# :goberserk: Etapa mais desafiadora
-
-- Relembrar o React foi bem desafiador, porém, acredito que mais desafiador ainda foi conectar o front com o back. Ainda não tinha feito algo do tipo e vários problemas surgiram, um deles foi a falta do CORS no backend, mesmo depois de configurar o AXIOS no front, ficava retornando erro e demorou um tempo para perceber o motivo.
-- Pontuando um outro desafio foi começar um projeto full stack do zero, mas foi incrível perceber que as lembranças fluíam de forma natural no desenrolar do desafio.
 
 # 🛠️ Abrir e rodar o projeto
 
@@ -77,20 +49,5 @@ Desafio proposto pela GRX, onde:
   * Instale as dependências no front-end:
     * `cd frontend`
     * `npm install`
-  * Instale as dependências no back-end:
-    * `cd backend`
-    * `npm install`
   * Inicialize o projeto:
-    * Na pasta do front-end `npm start` (uma nova página deve abrir no seu navegador com as perguntas do formulário)
-    * Na pasta do back-end `npm run dev` (o back-end começará a rodar na porta 3001)
-
-# :recycle: Feedback sobre o desafio
-
-- Uma das regras pede para dispor um contador que fica vermelho caso seja extrapolada uma das duas regras da caixa de texto
-(mínimo de 15 e máximo de 200 caracteres), sendo que uma opção do HTML é justamente criar o limite máximo, não deixando ultrapassar. Uma forma que vejo
-para melhorar seria não ter a regra de caracteres máximo, mas ter uma regra de que o botão enviar ficaria desabilitado no caso de passar de 200,
-nesse momento ficaria vermelho o contador. Não é muito funcional, mas seria bom para testar lógica.
-- Outro ponto que gostaria de expor, é que adorei a pergunta na entrevista inicial sobre a nota que eu dava pra cada stack, isso me fez procurar mais sobre bootstrap
-e apliquei nesse desafio.
-- No mais, foi um ótimo desafio. Me fez lembrar muita coisa sobre ReactJs e colocar em prática alguns conhecimentos do NodeJs. Fora que me fez olhar para CSS
-com mais agrado.  -->
+    * Na pasta desafio-warren dê `npm start` (uma nova página deve abrir no seu navegador com os botões para escolher qual desafio quer ver)
