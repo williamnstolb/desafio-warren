@@ -44,8 +44,10 @@ let combinationSum = function(candidates, target) {
 
 const listOfCombination = (list, number) => {
   const allCombinations = combinationSum(list, number);
+  // console.log(allCombinations);
   const selectCombinations = allCombinations
     .filter(combination => combination.length === maxLength(list, number));
+  
   return selectCombinations;
 }
 
