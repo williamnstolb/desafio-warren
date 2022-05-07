@@ -58,7 +58,7 @@ function Desafio3() {
         <ul className="list-group">Resultado:</ul>
         { isLoading ? <IsLoading /> :
           listOfCombination(list, number).map((item) => (
-            <li className="list-group-item" key={item}>[{item}]</li>
+            <li className="list-group-item col border border-dark" key={item}>[{item}]</li>
           ))
         }
       </div>
