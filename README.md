@@ -47,11 +47,10 @@ Desafio proposto pela WARREN, onde:
 1. Clone o repositório
   * `git clone git@github.com:williamnstolb/desafio-warren.git`
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd app`
+    * `cd desafio-warren`
 
 2. Instale as dependências e inicialize
-  * Instale as dependências no front-end:
-    * `cd frontend`
+  * Instale as dependências:
     * `npm install`
   * Inicialize o projeto:
-    * Na pasta desafio-warren dê `npm start` (uma nova página deve abrir no seu navegador com os botões para escolher qual desafio quer ver)
+    * Na pasta desafio-warren no console dê `npm start` (uma nova página deve abrir no seu navegador com os botões para escolher qual desafio quer ver)
