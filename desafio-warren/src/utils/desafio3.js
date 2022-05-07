@@ -10,7 +10,8 @@ const maxLength = (list, x) => {
       sum += element;
       count += 1;
     } else i += 1;
-  }  
+  }
+  if(sum < x) count += 1;
   return count;
 }
 

@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import listOfCombination from '../utils/desafio3';
 
 function Desafio3() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState([2,3,4]);
   const [number, setNumber] = useState(10);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleChangeList = () => {
     const value = document.getElementById('valueAdd').value;
     setIsLoading(true);
-    if(value !== '') {
-      list.push(parseInt(value));
+    if(value !== '' && value !== undefined) {
+      if(!(list.find(n => n === parseInt(value)))) list.push(parseInt(value));
       setList(list);
+      document.getElementById('valueAdd').value = '';
     }
-    document.getElementById('valueAdd').value = '';    
   }
 
   const cleanList = () => {
@@ -27,6 +27,7 @@ function Desafio3() {
   
 
   const handleChangeNumber = (e) => {
+    setIsLoading(true);
     setNumber(e.target.value);
   }
 
@@ -37,20 +38,19 @@ function Desafio3() {
       <div>
         <label>Qual valor deseja adicionar na lista?:
           {' '}
-          <input id="valueAdd" type="tel" placeholder="Digite aqui" />
+          <input id="valueAdd" type="number" placeholder="Digite aqui" />
           <button type="button" onClick={ handleChangeList }>Adicionar</button>
           <button type="button" onClick={ cleanList }>Limpa lista</button>
         </label>
         <br />
-        <p >{isLoading ? <h1>Carregando...</h1> : `Lista de números: [${list}]` }</p>
+        <div >{isLoading ? <h1>Carregando...</h1> : `Lista de números: [${list}]` }</div>
         <br />
         <label >Número:
           {' '}
           <input type="tel" onChange={ handleChangeNumber } value={ number } />
-        </label>
-        
+        </label>        
         <ul>Resultado:</ul>
-        {
+        { isLoading ? <h1>Carregando...</h1> :
           listOfCombination(list, number).map((item) => (
             <li key={item}>[{item}]</li>
           ))
