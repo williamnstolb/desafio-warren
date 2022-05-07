@@ -38,8 +38,9 @@ Desafio proposto pela WARREN, onde:
 
 # :books: Stacks utilizadas
 
-- [ReactJs](https://pt-br.reactjs.org/) 
-- [Bootstrap](https://getbootstrap.com/) 
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [ReactJs](https://pt-br.reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
 
 # 🛠️ Abrir e rodar o projeto
 
