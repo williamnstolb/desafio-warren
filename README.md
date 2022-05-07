@@ -16,7 +16,7 @@
 
 Desafio proposto pela WARREN, onde:
 
-- O Objetivo era realizar três desafio, sendo eles:
+- O Objetivo era realizar 3 desafios, sendo eles:
   * Desafio 01
   
       Alguns números inteiros positivos n possuem uma propriedade na qual a soma de n + reverso(n) resultam em números ímpares. Por exemplo, 36 + 63 = 99 e 409 + 904 = 1313. Considere que n ou reverso(n) não podem começar com 0.
